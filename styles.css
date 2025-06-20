@@ -779,7 +779,7 @@ h1 {
     /* border-right: 1px solid #232323; */ /* Remove right border */
     box-sizing: border-box;
     border-radius: 8px;       /* Match navLinks border radius */
-      .services {
+  .services {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: repeat(3, auto);
     width: 96vw;
