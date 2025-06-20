@@ -684,4 +684,48 @@ h1 {
     padding: 12px 0;
     margin: 0 auto;
   }
+   .hero-section {
+    flex-direction: column;
+    align-items: flex-start;
+    min-height: unset;
+    padding: 0 0 24px 0;
+  }
+  .content {
+    width: 100vw;
+    margin-left: 0;
+    padding: 0 6vw;
+    align-items: flex-start;
+    text-align: left;
+  }
+  .popUpContainer {
+    width: 60vw;
+    min-width: 180px;
+    max-width: 90vw;
+    height: 40px;
+    margin-bottom: 1rem;
+  }
+  .popUp {
+    width: 60vw;
+    min-width: 180px;
+    max-width: 90vw;
+    height: 40px;
+  }
+  .hello {
+    font-size: 0.9rem;
+    height: 40px;
+  }
+  .imgContainer {
+    width: 100vw;
+    height: 38vw;
+    min-height: 120px;
+    justify-content: flex-start;
+    align-items: flex-end;
+    margin-top: 18px;
+  }
+    .heroImg {
+    width: 38vw;
+    max-width: 120px;
+    height: auto;
+    object-fit: contain;
+  }
 }
