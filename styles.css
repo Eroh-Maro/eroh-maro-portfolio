@@ -643,7 +643,6 @@ h1 {
 
 /* For screens 600px and below (typical mobile) */
 @media (max-width: 600px) {
-@media (max-width: 600px) {
   .navbar {
     flex-direction: column;
     align-items: stretch;
@@ -654,13 +653,15 @@ h1 {
     width: 100vw;
     display: flex;
     justify-content: center;
+    align-items: center;      /* Add this to vertically center */
     margin: 0;
     padding: 0;
+    height: auto;             /* Ensure no extra height */
   }
   .logo {
     width: 90vw;
     font-size: 1.1rem;
-    padding: 10px 0;
+    padding: 10px 0;          /* Same as .navLinks */
     margin: 0 auto;
     background-color: #141414;
     box-sizing: border-box;
@@ -668,7 +669,10 @@ h1 {
     display: flex;
     align-items: center;
     justify-content: center;
-    border-right: none !important; /* Remove right border */
+    border-right: none !important;
+    min-height: 48px;         /* Ensure same min height as navLinks */
+    height: auto;
+    gap: 5px;
   }
   .logoPic {
     height: 32px;
@@ -703,6 +707,8 @@ h1 {
     margin: 0 auto;
   }
 }
+@media (max-width: 600px) {
+
   .hero-section {
     flex-direction: column;
     align-items: stretch;
