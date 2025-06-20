@@ -729,22 +729,22 @@ h1 {
     min-height: 180px;
   }
   .popUpContainer {
-    width: 40vw;
-    min-width: 140px;
-    max-width: 95vw;
-    height: 40px;
-    margin-bottom: 1rem;
+    width: 28vw;
+    min-width: 90px;
+    max-width: 60vw;
+    height: 28px;
+    margin-bottom: 0.7rem;
   }
-   .popUp {
-    width: 40vw;
-    min-width: 140px;
-    max-width: 95vw;
-    height: 40px;
+  .popUp {
+    width: 28vw;
+    min-width: 90px;
+    max-width: 60vw;
+    height: 28px;
   }
   .hello {
-    font-size: 1rem;
-    height: 40px;
-
+    font-size: 0.85rem;
+    height: 28px;
+    line-height: 28px;
   }
   .imgContainer {
     width: 60vw;
