@@ -733,4 +733,17 @@ h1 {
     object-fit: contain;
     display: block;
   }
+  .logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 90vw;              /* Match navLinks width */
+    gap: 5px;
+    padding: 10px 0;          /* Match navLinks vertical padding */
+    margin: 0 auto;           /* Center horizontally */
+    background-color: #141414;/* Match navLinks background */
+    /* border-right: 1px solid #232323; */ /* Remove right border */
+    box-sizing: border-box;
+    border-radius: 8px;       /* Match navLinks border radius */
+}
 }
