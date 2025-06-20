@@ -747,23 +747,24 @@ h1 {
     height: 28px;
     line-height: 28px;
   }
-  .imgContainer {
-    position: static;         /* Remove any absolute/relative positioning */
+.imgContainer {
+    position: static;
     width: 100vw;
-    height: auto;
-    min-height: unset;
+    height: 60vh;
+    min-height: 220px;
     margin-top: 24px;
     background: none;
     display: flex;
     justify-content: center;
     align-items: flex-end;
-    order: 2;                 /* Ensure it comes after .content */
+    order: 2;
   }
   .heroImg {
-    width: 60vw;
-    max-width: 220px;
-    height: auto;
-    object-fit: contain;
+    width: 100vw;
+    max-width: 100vw;
+    height: 60vh;
+    max-height: 60vh;
+    object-fit: cover;
     display: block;
   }
   .logo {
