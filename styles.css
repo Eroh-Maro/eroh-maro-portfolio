@@ -639,3 +639,49 @@ h1 {
         min-height: 350px;
     }
 }
+/* Add to styles.css */
+
+/* For screens 600px and below (typical mobile) */
+@media (max-width: 600px) {
+  .navbar {
+    flex-direction: column;
+    align-items: stretch;
+    padding: 0 0 12px 0;
+  }
+  .logo {
+    width: 100vw;
+    font-size: 1.1rem;
+    padding: 8px 0;
+  }
+  .logoPic {
+    height: 32px;
+  }
+  .navList {
+    flex-direction: column;
+    gap: 6px;
+    width: 100vw;
+    align-items: stretch;
+    padding: 0 0 8px 0;
+  }
+  .navLinks {
+    width: 90vw;
+    font-size: 1rem;
+    padding: 10px 0;
+    margin: 0 auto;
+    background-color: #141414;
+    border-radius: 8px;
+    text-align: center;
+  }
+  .navButton {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    margin: 10px 0 0 0;
+  }
+  .hire {
+    width: 90vw;
+    font-size: 1rem;
+    padding: 12px 0;
+    margin: 0 auto;
+  }
+}
