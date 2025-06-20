@@ -786,7 +786,7 @@ h1 {
     gap: 8px;
   }
   .serviceContainer {
-    width: 44vw;
+    width: 12vw;
     min-width: 0;
     padding: 8px 6px;
     margin: 4px;
@@ -794,18 +794,18 @@ h1 {
   }
   .service-img {
     margin-right: 6px;
-    min-width: 38px;
-    min-height: 38px;
-    width: 38px;
-    height: 38px;
+    min-width: 19px;
+    min-height: 19px;
+    width: 19px;
+    height: 19px;
   }
   .service-icon {
-    width: 24px;
-    height: 24px;
-    padding: 4px;
+    width: 12px;
+    height: 12px;
+    padding: 2px;
   }
   .service-title {
-    font-size: 1rem;
+    font-size: 0.6rem;
     margin: 0 4px;
     word-break: break-word;
   }
