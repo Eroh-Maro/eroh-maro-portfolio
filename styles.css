@@ -785,37 +785,63 @@ h1 {
     width: 96vw;
     gap: 8px;
   }
-  .serviceContainer {
-    width: 12vw;
+.serviceWrapper {
+    width: 100vw;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+  }
+  .services {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    width: 96vw;
+    margin: 0 auto;
+  }
+    .serviceContainer {
+    width: 100%;
     min-width: 0;
-    padding: 8px 6px;
-    margin: 4px;
+    padding: 10px 4px;
+    margin: 0;
     font-size: 0.95rem;
+    border-radius: 6px;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
   }
   .service-img {
-    margin-right: 6px;
-    min-width: 19px;
-    min-height: 19px;
-    width: 19px;
-    height: 19px;
+    margin: 0 auto 6px auto;
+    min-width: 32px;
+    min-height: 32px;
+    width: 32px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
-  .service-icon {
-    width: 12px;
-    height: 12px;
+    .service-icon {
+    width: 22px;
+    height: 22px;
     padding: 2px;
   }
   .service-title {
-    font-size: 0.6rem;
-    margin: 0 4px;
+    font-size: 0.95rem;
+    margin: 4px 0 0 0;
     word-break: break-word;
+    text-align: center;
+  }
+  .More-img {
+    margin: 4px auto 0 auto;
+    display: flex;
+    justify-content: center;
   }
   .More-img .service-icon {
-    width: 18px;
-    height: 18px;
-    padding: 2px;
+    width: 16px;
+    height: 16px;
+    padding: 1px;
   }
-  .serviceText {
-    width: 90vw;
+    .serviceText {
+    width: 92vw;
     font-size: 1rem;
   }
   .serviceSection {
