@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services - Portfolio</title>
+    <link rel="stylesheet" href="services.css">
+</head>
+<body>
+  <nav class="navbar">
+        <div class="logoContainer">
+     <a href="../index.html">
+       <div class="logo">
+        <div>SWE</div>
+        <img src="../images/developer.png" alt="" class="logoPic" />
+      </div>
+     </a>
+    </div>
+    </div>
+    <div></div>
+    <ul class="navList">
+     <a href="../about/about.html">
+       <li class="navLinks">About Me</li>
+     </a>
+      <a href="./services/services.html">
+        <li class="navLinks">Services</li>
+
+      </a>
+    </ul>
+    <div class="navButton">
+      <a href="../hire/hire.html"> <button class="hire">Hire Me</button> </a>
+    </div>
+  </nav>
+
+    <div class="container">
+        <h1>Services</h1>
+        <p class="intro-text">Explore the range of services I offer to help bring your ideas to life!</p>
+        
+<div class="services-cards">
+    <div class="service-card">
+        <div class="icon-circle">
+            <img src="../images/webDev.png" alt="Web Dev Icon" class="service-icon">
+        </div>
+        <h2>Web Dev</h2>
+        <p>I create responsive and dynamic websites tailored to your needs using modern web technologies.</p>
+    </div>
+    <div class="service-card">
+        <div class="icon-circle">
+            <img src="../images/consult.png" alt="Consultancy Icon" class="service-icon">
+        </div>
+        <h2>Consultancy</h2>
+        <p>Providing expert advice to optimize your projects and business strategies effectively.</p>
+    </div>
+    <div class="service-card">
+        <div class="icon-circle">
+            <img src="../images/design.png" alt="UI/UX Icon" class="service-icon">
+        </div>
+        <h2>UI/UX</h2>
+        <p>Designing intuitive and user-friendly interfaces to enhance your digital experience.</p>
+    </div>
+    <div class="service-card">
+        <div class="icon-circle">
+            <img src="../images/SEO.png" alt="SEO Icon" class="service-icon">
+        </div>
+        <h2>Search Engine Optimization</h2>
+        <p>Boost your online presence with strategies to improve search engine rankings.</p>
+    </div>
+    <div class="service-card">
+        <div class="icon-circle">
+            <img src="../images/deployment.png" alt="Software Deployment Icon" class="service-icon">
+        </div>
+        <h2>Software Deployment</h2>
+        <p>Efficiently deploy and manage software solutions for seamless integration.</p>
+    </div>
+</div>
+
+    </div>
+    
+  <script>
+    document.querySelectorAll(".navLinks, .hire").forEach((link) => {
+      link.addEventListener("mouseenter", function (e) {
+        const rect = this.getBoundingClientRect();
+        const x = e.clientX - rect.left;
+        const y = e.clientY - rect.top;
+        this.style.setProperty("--ripple-x", `${x}px`);
+        this.style.setProperty("--ripple-y", `${y}px`);
+        this.classList.add("ripple-effect");
+      });
+      link.addEventListener("mouseleave", function () {
+        this.classList.remove("ripple-effect");
+      });
+    });
+  </script>
+
+    <footer>
+        <p>© 2025 Your Name. All rights reserved.</p>
+    </footer>
+</body>
+</html>

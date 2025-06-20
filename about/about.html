@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me - Portfolio</title>
+    <link rel="stylesheet" href="about.css">
+</head>
+<body>
+  <nav class="navbar">
+  <div class="logoContainer">
+     <a href="../index.html">
+       <div class="logo">
+        <div>SWE</div>
+        <img src="../images/developer.png" alt="" class="logoPic" />
+      </div>
+     </a>
+    </div>
+    <div></div>
+    <ul class="navList">
+     <a href="./about/about.html">
+       <li class="navLinks">About Me</li>
+     </a>
+         <a href="../services/services.html">
+        <li class="navLinks">Services</li>
+
+      </a>
+    </ul>
+    <div class="navButton">
+      <a href="../hire/hire.html"> <button class="hire">Hire Me</button> </a>
+    </div>
+  </nav>
+
+    <div class="container">
+        <h1>About Me</h1>
+        <p class="intro-text">Hi, I'm a young coder from Ozoro, Delta State, Nigeria, with a passion for web development and learning new technologies. Currently, I'm studying Computer Science at Delta State University (DELSU), where I'm honing my skills and exploring the world of software development.</p>
+        <h2>My Skills</h2>
+        <div class="skills">
+            <ul>
+                <li>Figma</li>
+                <li>GIMP</li>
+                <li>Mongo DB</li>
+                <li>React</li>
+                <li>Express</li>
+                <li>Node.js</li>
+                <li>PostgreSQL</li>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>Git & GitHub</li>
+            </ul>
+        </div>
+    </div>
+    
+  <script>
+    document.querySelectorAll(".navLinks, .hire").forEach((link) => {
+      link.addEventListener("mouseenter", function (e) {
+        const rect = this.getBoundingClientRect();
+        const x = e.clientX - rect.left;
+        const y = e.clientY - rect.top;
+        this.style.setProperty("--ripple-x", `${x}px`);
+        this.style.setProperty("--ripple-y", `${y}px`);
+        this.classList.add("ripple-effect");
+      });
+      link.addEventListener("mouseleave", function () {
+        this.classList.remove("ripple-effect");
+      });
+    });
+  </script>
+    <footer>
+        <p>© 2025 Your Name. All rights reserved.</p>
+    </footer>
+</body>
+</html>

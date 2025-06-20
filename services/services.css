@@ -1,0 +1,281 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-color: #0D0E12;
+    color: #fff;
+    line-height: 1.6;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.navbar {
+    height: 60%;
+    background-color: #0D0E12;
+    padding: 0;
+    margin: 0;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+     
+}
+.logoContainer a {
+  text-decoration: none;
+  color: inherit;
+  display: inline-block;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+li {
+    text-decoration: none;
+}
+.navLinks {
+    padding: 10px;
+    margin: 5px;
+    width: 9vw;
+    text-align: center;
+    background-color: #141414;
+    border-radius: 8px;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    z-index: 0;
+    transition: color 0.5s, font-size 0.5s, font-weight 0.3s;
+}
+.navLinks:hover {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    font-weight: 500;
+    /* background-color: #FF4D07;  <-- REMOVE this line */
+}
+.navLinks::after {
+    content: "";
+    position: absolute;
+    left: var(--ripple-x, 50%);
+    top: var(--ripple-y, 50%);
+    width: 200px;
+    height: 200px;
+    margin-left: -100px;
+    margin-top: -100px;
+    background: #FF4D07;
+    border-radius: 50%;
+    opacity: 0;
+    transform: scale(0);
+    transition: transform 0.5s, opacity 0.5s;
+    z-index: -1;
+    pointer-events: none;
+}
+.navLinks.ripple-effect::after {
+    opacity: 1;
+    transform: scale(4);
+}
+.navList {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.8vw;
+    flex: 1 1 auto;
+}
+.navList a {
+  text-decoration: none;
+  color: inherit;
+  display: contents; /* So the li keeps its block styling */
+}
+.academy {
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+}
+.logoPic {
+    height: 3vw;
+}
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 24vw;
+    gap: 5px;
+    padding: 10px;
+    margin: 0;
+    background-color: #0D0E12;      /* Match navLinks */
+    border-right: 1px solid #232323;      /* Optional: subtle border for separation */
+    box-sizing: border-box;         /* Ensure width includes border/padding */
+}
+.logoContainer{
+    padding: 0;
+    margin: 0;
+}
+.hire {
+    background-color: #FF4D07;
+    width: 10vw;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin-right: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    position: relative;
+    overflow: hidden;
+    z-index: 0; /* Match navLinks */
+    transition: color 0.5s, font-size 0.5s, font-weight 0.5s;
+}
+
+.hire:hover {
+    color: white;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.hire::after {
+    content: "";
+    position: absolute;
+    left: var(--ripple-x, 50%);
+    top: var(--ripple-y, 50%);
+    width: 200px;
+    height: 200px;
+    margin-left: -100px;
+    margin-top: -100px;
+    background: #141414;/* Match navLinks */
+    border-radius: 50%;
+    opacity: 0;
+    transform: scale(0);
+    transition: transform 0.5s, opacity 0.5s;
+    z-index: -1; /* Match navLinks */
+    pointer-events: none;
+}
+
+.hire.ripple-effect::after {
+    opacity: 1; /* Match navLinks */
+    transform: scale(4);
+}
+
+.container {
+    max-width: 800px;
+    margin: 3rem auto;
+    padding: 2rem;
+    background-color: #141416;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 1rem;
+    font-size: 2.5rem;
+}
+
+.intro-text {
+    text-align: center;
+    font-size: 1.1rem;
+    margin-bottom: 1.5rem;
+    color: #fff;
+}
+
+.services-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.service-card {
+    background-color: #181818;
+    border: 1px solid #232323;
+    border-radius: 8px;
+    padding: 1.5rem;
+    text-align: center;
+    flex: 1;
+    min-width: 200px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(255, 77, 7, 0.2);
+}
+
+.service-icon {
+    width: 40px;
+    height: 40px;
+    margin-bottom: 1rem;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.service-card h2 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+    color: #fff;
+}
+
+.service-card p {
+    font-size: 1rem;
+    color: #fff;
+    line-height: 1.5;
+}
+
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #0D0E12;
+    border-top: 1px solid #232323;
+    color: #fff;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+.icon-circle {
+  width: 70px;
+  height: 70px;
+  background: #fff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 18px auto;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+}
+
+
+@media (max-width: 600px) {
+    .container {
+        margin: 1rem;
+        padding: 1.5rem;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    .services-cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .service-card {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    .nav-links a {
+        margin-left: 1rem;
+        font-size: 0.9rem;
+    }
+}
