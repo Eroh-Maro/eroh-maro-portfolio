@@ -749,7 +749,7 @@ h1 {
   }
   .imgContainer {
     width: 100vw;
-    height: 100vw;      /* Use vw for a square-like aspect, or try 80vh for more height */
+    height: 100vh;      /* Use vw for a square-like aspect, or try 80vh for more height */
     min-height: unset; /* Remove min-height restriction */
     display: flex;
     justify-content: center;
