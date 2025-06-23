@@ -671,13 +671,13 @@ h1 {
     word-break: break-word;
     line-height: 1.1;
   }
-    .stats-section {
+  .stats-section {
+    min-height: 0;
+    height: auto;
+    padding: 24px 0;
     display: flex;
-    align-items: center;      /* Vertically center .stats-row */
-    justify-content: center;  /* Horizontally center .stats-row */
-    position: relative;
-    min-height: 320px;        /* Match .stat-bg height */
-    height: 280px;
+    align-items: center;
+    justify-content: center;
   }
   .stats-row {
     position: static;         /* Remove absolute positioning */
@@ -714,13 +714,12 @@ h1 {
     overflow: hidden;
 }
 
-.stat-bg-img {
-    width: 100vw;
-    height: 260px;
-    object-fit: cover;
-    display: block;
-    filter: brightness(0.5);
-}
+  .stat-bg,
+  .stat-bg-img {
+    height: 180px;
+    min-height: 0;
+    max-height: 180px;
+  }
 }
 @media (max-width: 600px) {
 
