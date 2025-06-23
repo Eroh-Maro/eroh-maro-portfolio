@@ -794,6 +794,7 @@ h1 {
     gap: 10px;
     width: 96vw;
     margin: 0 auto;
+    margin-bottom: 20px;
   }
     .serviceContainer {
     width: 100%;
