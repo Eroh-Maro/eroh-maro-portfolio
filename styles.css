@@ -749,21 +749,19 @@ h1 {
   }
   .imgContainer {
     width: 100vw;
-    height: auto;
-    min-height: unset;
+    height: 60vh; /* or try 70vh for more height */
+    min-height: 320px;
     display: flex;
     justify-content: center;
-    align-items: flex-start;
+    align-items: stretch; /* allow image to fill height */
     padding: 0;
     background: none;
   }
- .heroImg {
+  .heroImg {
     width: 100vw;
+    height: 100%;
     max-width: 100vw;
-    height: auto;
-    min-height: 320px;    /* Add this line for a minimum height */
-    max-height: 80vh;     /* Increase this value for a taller image */
-    object-fit: contain;
+    object-fit: cover; /* or 'contain' if you want the full image always visible */
     display: block;
   }
   .logo {
