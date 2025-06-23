@@ -730,6 +730,9 @@ h1 {
     text-align: left;
     min-height: 180px;
     z-index: 2;
+    height: 100vh;       /* Fill the viewport height */
+    min-height: 400px;   /* Optional: ensure a minimum height */
+    flex: 1 1 auto;   
   }
   .popUpContainer {
     width: 28vw;
