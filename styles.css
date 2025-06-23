@@ -719,6 +719,8 @@ h1 {
     align-items: flex-start;
     padding: 0 0 24px 0;
     width: 100vw;
+    min-height: 100vh;   /* Ensure the section fills the viewport */
+    height: 100vh;
   }
   .content {
     width: 100vw;
