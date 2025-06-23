@@ -679,8 +679,8 @@ h1 {
     align-items: stretch;
   }
    .stat-box {
-    width: 38vw;
-    height: 38vw;
+    width: 30vw;
+    height: 30vw;
     max-width: 150px;
     max-height: 150px;
     min-width: 100px;
