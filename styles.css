@@ -682,7 +682,6 @@ h1 {
   .stats-row {
     position: static;         /* Remove absolute positioning */
     width: 100vw;
-    height: 280px;
     z-index: 1;
     display: flex;
     flex-wrap: wrap;
