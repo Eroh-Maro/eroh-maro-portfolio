@@ -759,7 +759,7 @@ h1 {
   }
   .heroImg {
     width: 100vw;
-    height: 100%;
+    height: 80vh;
     max-width: 100vw;
     object-fit: cover; /* or 'contain' if you want the full image always visible */
     display: block;
