@@ -757,15 +757,15 @@ h1 {
     padding: 0;
     background: none;
   }
-.heroImg {
+ .heroImg {
     width: 100vw;
     max-width: 100vw;
     height: auto;
-    min-height: 620px;   /* Try a larger minimum height */
-    max-height: 95vh;    /* Allow the image to use more vertical space */
+    min-height: 320px;    /* Add this line for a minimum height */
+    max-height: 80vh;     /* Increase this value for a taller image */
     object-fit: contain;
     display: block;
-}
+  }
   .logo {
     display: flex;
     align-items: center;
