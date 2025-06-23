@@ -676,7 +676,7 @@ h1 {
     align-items: center;      /* Vertically center .stats-row */
     justify-content: center;  /* Horizontally center .stats-row */
     position: relative;
-    min-height: 280px;        /* Match .stat-bg height */
+    min-height: 320px;        /* Match .stat-bg height */
     height: 280px;
   }
   .stats-row {
