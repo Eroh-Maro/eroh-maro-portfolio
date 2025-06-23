@@ -749,7 +749,7 @@ h1 {
   }
   .imgContainer {
     width: 100vw;
-    height: 60vh; /* or try 70vh for more height */
+    height: 70vh; /* or try 70vh for more height */
     min-height: 320px;
     display: flex;
     justify-content: center;
