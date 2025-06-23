@@ -695,6 +695,20 @@ h1 {
   .stat-label {
     font-size: 0.8rem;
   }
+  .stat-bg {
+    width: 100vw;
+    height: 260px;
+    z-index: 0;
+    overflow: hidden;
+}
+
+.stat-bg-img {
+    width: 99.6vw;
+    height: 280px;
+    object-fit: cover;
+    display: block;
+    filter: brightness(0.5);
+}
 }
 @media (max-width: 600px) {
 
