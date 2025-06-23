@@ -50,14 +50,10 @@
         </a>
       </div>
     </div>
-
-  <picture>
-    <source srcset="./images/meFinal-mobile.png" media="(max-width: 600px)" />
-    <div class="imgContainer"></div>
-    <img src="./images/meFinal1.png" alt="" class="heroImg" />
+    <div class="imgContainer">
+      <img src="./images/meFinal1.png" alt="" class="heroImg" />
+  
     </div>
-  </picture>
-
   </section>
 
 
@@ -198,7 +194,18 @@
   </div>
   <button class="portfolio-viewall">View All</button>
 </section>
-
+<script>
+  function updateHeroImg() {
+    const img = document.querySelector('.imgContainer .heroImg');
+    if (window.innerWidth <= 600) {
+      img.src = './images/meFinal-mobile.png';
+    } else {
+      img.src = './images/meFinal1.png';
+    }
+  }
+  window.addEventListener('resize', updateHeroImg);
+  window.addEventListener('DOMContentLoaded', updateHeroImg);
+</script>
   <script>
     document.querySelectorAll(".navLinks, .hire").forEach((link) => {
       link.addEventListener("mouseenter", function (e) {
