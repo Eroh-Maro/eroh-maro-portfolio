@@ -679,8 +679,8 @@ h1 {
     align-items: stretch;
   }
     .stat-box {
-    width: 28vw;
-    height: 28vw;
+    width: 20vw;
+    height: 20vw;
     max-width: 110px;
     max-height: 110px;
     min-width: 80px;
@@ -690,10 +690,10 @@ h1 {
     padding: 0;
   }
   .stat-number {
-    font-size: 1.1rem;
+    font-size: 1rem;
   }
   .stat-label {
-    font-size: 0.85rem;
+    font-size: 0.8rem;
   }
 }
 @media (max-width: 600px) {
