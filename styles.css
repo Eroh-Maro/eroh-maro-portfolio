@@ -598,47 +598,7 @@ h1 {
 }
 
 /* Responsive adjustments */
-@media (max-width: 900px) {
-    .stats-row {
-        gap: 3vw;
-    }
-    .stat-box {
-        width: 90px;
-        height: 90px;
-    }
-    .stat-number {
-        font-size: 1.3rem;
-    }
-    .stat-bg,
-    .stat-bg-img {
-        height: 180px;
-    }
-    .stats-section {
-        min-height: 180px;
-    }
-}
 
-@media (max-width: 600px) {
-    .stats-row {
-        flex-direction: column;
-        gap: 2vh;
-    }
-    .stat-box {
-        width: 70vw;
-        height: 70vw;
-        max-width: 180px;
-        max-height: 180px;
-        margin: 1vh auto;
-    }
-    .stat-bg,
-    .stat-bg-img {
-        height: 350px;
-        min-height: 220px;
-    }
-    .stats-section {
-        min-height: 350px;
-    }
-}
 /* Add to styles.css */
 
 /* For screens 600px and below (typical mobile) */
