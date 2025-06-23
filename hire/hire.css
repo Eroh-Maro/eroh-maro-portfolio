@@ -272,6 +272,9 @@ h1 {
     .contact-card {
         width: 100%;
         max-width: 300px;
+            min-width: 0;
+    box-sizing: border-box;
+    margin: 0 auto;
     }
 
     .nav-links a {
