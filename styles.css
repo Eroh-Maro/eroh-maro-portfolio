@@ -749,11 +749,11 @@ h1 {
   }
   .imgContainer {
     width: 100vw;
-    height: 70vh; /* or try 70vh for more height */
-    min-height: 320px;
+    height: 90vw;      /* Use vw for a square-like aspect, or try 80vh for more height */
+    min-height: unset; /* Remove min-height restriction */
     display: flex;
     justify-content: center;
-    align-items: stretch; /* allow image to fill height */
+    align-items: stretch;
     padding: 0;
     background: none;
   }
