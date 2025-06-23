@@ -673,7 +673,7 @@ h1 {
   }
   .stats-row {
     flex-direction: row;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     gap: 2vw;
     justify-content: center;
     align-items: stretch;
@@ -704,7 +704,7 @@ h1 {
 
 .stat-bg-img {
     width: 99.6vw;
-    height: 280px;
+    height: 260px;
     object-fit: cover;
     display: block;
     filter: brightness(0.5);
