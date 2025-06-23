@@ -781,11 +781,6 @@ h1 {
     /* border-right: 1px solid #232323; */ /* Remove right border */
     box-sizing: border-box;
     border-radius: 8px;       /* Match navLinks border radius */
-  .services {
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: repeat(3, auto);
-    width: 96vw;
-    gap: 8px;
   }
 .serviceWrapper {
     width: 100vw;
@@ -793,9 +788,9 @@ h1 {
     padding: 0;
     margin: 0;
   }
-  .services {
+ .services {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr; /* 2 per row */
     gap: 10px;
     width: 96vw;
     margin: 0 auto;
@@ -810,6 +805,7 @@ h1 {
     flex-direction: column;
     align-items: center;
     text-align: center;
+        box-sizing: border-box;
   }
   .service-img {
     margin: 0 auto 6px auto;
@@ -849,5 +845,4 @@ h1 {
   .serviceSection {
     margin-top: 8vh;
   }
-}
 }
