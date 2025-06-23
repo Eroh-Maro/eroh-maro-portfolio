@@ -252,7 +252,12 @@ footer {
   margin: 0 auto 18px auto;
   box-shadow: 0 2px 8px rgba(0,0,0,0.07);
 }
-
+.footer-content {
+  max-width: 900px;
+  margin: 0 auto;
+  opacity: 0.85;
+  letter-spacing: 0.5px;
+}
 
 @media (max-width: 600px) {
     .container {

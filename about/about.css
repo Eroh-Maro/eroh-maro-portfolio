@@ -230,6 +230,13 @@ footer {
     bottom: 0;
     width: 100%;
 }
+.footer-content {
+  max-width: 900px;
+  margin: 0 auto;
+  opacity: 0.85;
+  letter-spacing: 0.5px;
+}
+
 
 @media (max-width: 600px) {
     .container {
