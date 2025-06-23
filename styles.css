@@ -680,46 +680,32 @@ h1 {
     justify-content: center;
   }
   .stats-row {
-    position: static;         /* Remove absolute positioning */
     width: 100vw;
-    z-index: 1;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     gap: 2vw;
   }
-   .stat-box {
-    width: 30vw;
-    height: 30vw;
+  .stat-box {
+    width: 42vw;
+    height: 42vw;
     max-width: 150px;
     max-height: 150px;
-    min-width: 100px;
-    min-height: 100px;
+    min-width: 90px;
+    min-height: 90px;
     margin: 2vw 2vw;
     font-size: 1rem;
     padding: 0;
     box-sizing: border-box;
   }
-  .stat-number {
-    font-size: 1rem;
-  }
-  .stat-label {
-    font-size: 0.8rem;
-  }
-  .stat-bg {
-    width: 100vw;
-    height: 280px;
-    z-index: 0;
-    overflow: hidden;
-}
-
   .stat-bg,
   .stat-bg-img {
     height: 180px;
     min-height: 0;
     max-height: 180px;
   }
+
 }
 @media (max-width: 600px) {
 
