@@ -671,6 +671,30 @@ h1 {
     word-break: break-word;
     line-height: 1.1;
   }
+  .stats-row {
+    flex-direction: row;
+    flex-wrap: nowrap;
+    gap: 2vw;
+    justify-content: center;
+    align-items: stretch;
+  }
+    .stat-box {
+    width: 28vw;
+    height: 28vw;
+    max-width: 110px;
+    max-height: 110px;
+    min-width: 80px;
+    min-height: 80px;
+    margin: 0 1vw;
+    font-size: 0.95rem;
+    padding: 0;
+  }
+  .stat-number {
+    font-size: 1.1rem;
+  }
+  .stat-label {
+    font-size: 0.85rem;
+  }
 }
 @media (max-width: 600px) {
 
