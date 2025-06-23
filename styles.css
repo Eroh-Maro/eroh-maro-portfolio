@@ -761,7 +761,7 @@ h1 {
     width: 100vw;
     max-width: 100vw;
     height: auto;
-    min-height: 420px;    /* Add this line for a minimum height */
+    min-height: 350px;    /* Add this line for a minimum height */
     max-height: 80vh;     /* Increase this value for a taller image */
     object-fit: contain;
     display: block;
