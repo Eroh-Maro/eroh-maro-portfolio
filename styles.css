@@ -761,8 +761,8 @@ h1 {
     width: 100vw;
     max-width: 100vw;
     height: auto;
-    max-height: 60vh;
-    min-height: 50vh; 
+    max-height: 100vh;
+    min-height: 80vh; 
     object-fit: contain;
     display: block;
   }
